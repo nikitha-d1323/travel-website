@@ -158,3 +158,89 @@ body {
     font-size: 13px;
     color: #90e0ef;
 }
+/* DESTINATIONS SECTION */
+.destinations {
+    padding: 70px 40px;
+    background-color: #f0f8ff;
+    text-align: center;
+}
+
+.section-header {
+    margin-bottom: 40px;
+}
+
+.section-header h2 {
+    font-size: 36px;
+    color: #03045e;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.section-header p {
+    font-size: 16px;
+    color: #555555;
+}
+
+/* CARDS */
+.destination-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    width: 300px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: left;
+}
+
+.card-img {
+    height: 200px;
+    width: 100%;
+}
+
+/* Card image colors (placeholders until real images added) */
+.img-paris {
+    background-color: #48cae4;
+    background-image: linear-gradient(135deg, #48cae4, #0077b6);
+}
+
+.img-bali {
+    background-color: #52b788;
+    background-image: linear-gradient(135deg, #52b788, #1b4332);
+}
+
+.img-newYork {
+    background-color: #e76f51;
+    background-image: linear-gradient(135deg, #e76f51, #264653);
+}
+
+.card-info {
+    padding: 20px;
+}
+
+.card-info h3 {
+    font-size: 20px;
+    color: #03045e;
+    margin-bottom: 8px;
+}
+
+.card-info p {
+    font-size: 14px;
+    color: #555555;
+    line-height: 1.6;
+    margin-bottom: 14px;
+}
+
+.card-tag {
+    font-size: 13px;
+    background-color: #caf0f8;
+    color: #0077b6;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-weight: 500;
+}
