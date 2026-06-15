@@ -244,3 +244,31 @@ body {
     border-radius: 20px;
     font-weight: 500;
 }
+/* CARD HOVER EFFECTS */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 119, 182, 0.25);
+}
+
+.card-img {
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover .card-img {
+    transform: scale(1.05);
+}
+
+.card-tag {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card:hover .card-tag {
+    background-color: #0077b6;
+    color: #ffffff;
+}
