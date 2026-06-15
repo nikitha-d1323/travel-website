@@ -386,3 +386,109 @@ body {
 .g-red {
     background: linear-gradient(135deg, #ef233c, #8d0801);
 }
+/* PACKAGES SECTION */
+.packages {
+    padding: 70px 40px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.package-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.package-card {
+    background-color: #f0f8ff;
+    border-radius: 16px;
+    padding: 36px 28px;
+    width: 280px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.package-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 119, 182, 0.15);
+}
+
+/* Popular card highlight */
+.package-card.popular {
+    background-color: #0077b6;
+    border: 2px solid #00b4d8;
+    transform: translateY(-10px);
+}
+
+.package-card.popular:hover {
+    transform: translateY(-18px);
+    box-shadow: 0 16px 40px rgba(0, 119, 182, 0.4);
+}
+
+.popular-badge {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f77f00;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 16px;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+}
+
+.package-header h3 {
+    font-size: 22px;
+    color: #03045e;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.package-card.popular .package-header h3 {
+    color: #ffffff;
+}
+
+.price {
+    font-size: 36px;
+    font-weight: bold;
+    color: #0077b6;
+    margin-bottom: 24px;
+}
+
+.price span {
+    font-size: 14px;
+    font-weight: normal;
+    color: #555555;
+}
+
+.package-card.popular .price {
+    color: #caf0f8;
+}
+
+.package-card.popular .price span {
+    color: #90e0ef;
+}
+
+.package-features {
+    list-style: none;
+    margin-bottom: 28px;
+    text-align: left;
+}
+
+.package-features li {
+    font-size: 14px;
+    color: #333333;
+    padding: 8px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.package-card.popular .package-features li {
+    color: #caf0f8;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
