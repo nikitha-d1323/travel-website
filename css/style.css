@@ -318,3 +318,71 @@ body {
     color: #555555;
     line-height: 1.7;
 }
+/* GALLERY SECTION */
+.gallery {
+    padding: 70px 40px;
+    background-color: #f0f8ff;
+    text-align: center;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gallery-item {
+    height: 200px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item span {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+/* Gallery item colors */
+.g-blue {
+    background: linear-gradient(135deg, #48cae4, #0077b6);
+}
+
+.g-green {
+    background: linear-gradient(135deg, #52b788, #1b4332);
+}
+
+.g-orange {
+    background: linear-gradient(135deg, #f4a261, #e76f51);
+}
+
+.g-purple {
+    background: linear-gradient(135deg, #9b5de5, #5a189a);
+}
+
+.g-teal {
+    background: linear-gradient(135deg, #80ffdb, #0077b6);
+}
+
+.g-red {
+    background: linear-gradient(135deg, #ef233c, #8d0801);
+}
