@@ -272,3 +272,49 @@ body {
     background-color: #0077b6;
     color: #ffffff;
 }
+/* WHY US SECTION */
+.why-us {
+    padding: 70px 40px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.feature-box {
+    background-color: #f0f8ff;
+    border-radius: 16px;
+    padding: 36px 28px;
+    width: 240px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.feature-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 24px rgba(0, 119, 182, 0.15);
+}
+
+.feature-icon {
+    font-size: 42px;
+    margin-bottom: 16px;
+}
+
+.feature-box h3 {
+    font-size: 18px;
+    color: #03045e;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.feature-box p {
+    font-size: 14px;
+    color: #555555;
+    line-height: 1.7;
+}
