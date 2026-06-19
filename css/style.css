@@ -566,3 +566,75 @@ body {
     font-size: 13px;
     color: #0077b6;
 }
+/* NEWSLETTER SECTION */
+.newsletter {
+    padding: 80px 40px;
+    background-color: #0077b6;
+    background-image: linear-gradient(135deg, #023e8a 0%, #0077b6 50%, #00b4d8 100%);
+    text-align: center;
+}
+
+.newsletter-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.newsletter-content h2 {
+    font-size: 34px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 14px;
+    line-height: 1.3;
+}
+
+.newsletter-content p {
+    font-size: 16px;
+    color: #caf0f8;
+    margin-bottom: 36px;
+    line-height: 1.7;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.email-input {
+    padding: 14px 22px;
+    border-radius: 30px;
+    border: 2px solid #ffffff;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    font-size: 15px;
+    width: 320px;
+    outline: none;
+    transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+.email-input::placeholder {
+    color: #caf0f8;
+}
+
+.email-input:focus {
+    background-color: rgba(255, 255, 255, 0.25);
+    border-color: #90e0ef;
+}
+
+.newsletter .btn {
+    background-color: #f77f00;
+    padding: 14px 32px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 30px;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter .btn:hover {
+    background-color: #d62828;
+}
