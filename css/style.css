@@ -1,3 +1,19 @@
+/* CSS VARIABLES - COLOR THEME */
+:root {
+    --primary: #0077b6;
+    --primary-dark: #023e8a;
+    --primary-light: #00b4d8;
+    --primary-pale: #caf0f8;
+    --primary-soft: #90e0ef;
+    --accent: #f77f00;
+    --accent-hover: #d62828;
+    --bg-light: #f0f8ff;
+    --bg-white: #ffffff;
+    --bg-dark: #03045e;
+    --text-dark: #03045e;
+    --text-gray: #555555;
+    --text-white: #ffffff;
+}
 /* SMOOTH SCROLL */
 html {
     scroll-behavior: smooth;
