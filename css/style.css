@@ -4,6 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* SMOOTH SCROLL */
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -637,4 +641,8 @@ body {
 
 .newsletter .btn:hover {
     background-color: #d62828;
+}
+/* SCROLL OFFSET FIX (for sticky navbar) */
+section {
+    scroll-margin-top: 70px;
 }
