@@ -724,3 +724,142 @@ section {
         font-size: 16px;
     }
 }
+/* RESPONSIVE - CARDS AND SECTIONS */
+@media (max-width: 768px) {
+
+    /* DESTINATIONS */
+    .destinations {
+        padding: 50px 20px;
+    }
+
+    .destination-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 340px;
+    }
+
+    /* WHY US */
+    .why-us {
+        padding: 50px 20px;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-box {
+        width: 100%;
+        max-width: 340px;
+    }
+
+    /* GALLERY */
+    .gallery {
+        padding: 50px 20px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* PACKAGES */
+    .packages {
+        padding: 50px 20px;
+    }
+
+    .package-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .package-card {
+        width: 100%;
+        max-width: 340px;
+    }
+
+    .package-card.popular {
+        transform: translateY(0);
+    }
+
+    .package-card.popular:hover {
+        transform: translateY(-8px);
+    }
+
+    /* TESTIMONIALS */
+    .testimonials {
+        padding: 50px 20px;
+    }
+
+    .testimonial-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial-card {
+        width: 100%;
+        max-width: 340px;
+    }
+
+    /* NEWSLETTER */
+    .newsletter {
+        padding: 60px 20px;
+    }
+
+    .newsletter-content h2 {
+        font-size: 24px;
+    }
+
+    .email-input {
+        width: 100%;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    /* FOOTER */
+    .footer {
+        padding: 40px 20px 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    /* SECTION HEADERS */
+    .section-header h2 {
+        font-size: 26px;
+    }
+
+    .section-header p {
+        font-size: 14px;
+    }
+
+    /* GALLERY MOBILE */
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+    }
+}
+
+/* EXTRA SMALL SCREENS */
+@media (max-width: 480px) {
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .btn {
+        padding: 12px 28px;
+        font-size: 14px;
+    }
+}
