@@ -9,16 +9,21 @@
 </head>
 <body>
 
-    <!-- NAVBAR -->
+<!-- NAVBAR -->
     <nav class="navbar">
         <div class="logo">🌍 Wanderlust</div>
-        <ul class="nav-links">
+        <ul class="nav-links" id="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#destinations">Destinations</a></li>
             <li><a href="#packages">Packages</a></li>
             <li><a href="#gallery">Gallery</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </nav>
 
     <!-- HERO -->
@@ -281,6 +286,22 @@
             <p>&copy; 2026 Wanderlust Travel. All rights reserved.</p>
         </div>
     </footer>
+<script>
+        function toggleMenu() {
+            const nav = document.getElementById('nav-links');
+            const ham = document.getElementById('hamburger');
+            nav.classList.toggle('open');
+            ham.classList.toggle('active');
+        }
+
+        // Close menu when a link is clicked
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('nav-links').classList.remove('open');
+                document.getElementById('hamburger').classList.remove('active');
+            });
+        });
+    </script>
 
 </body>
 </html>
