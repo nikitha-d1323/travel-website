@@ -1023,3 +1023,101 @@ section {
         text-align: center;
     }
 }
+/* DAY 29 - CONSISTENCY PASS */
+
+/* Consistent section heading underline */
+.section-header h2 {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 12px;
+}
+
+.section-header h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background-color: var(--accent);
+    border-radius: 2px;
+}
+
+/* Consistent button font */
+.btn {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+/* Consistent card border on hover */
+.card:hover {
+    border: 1px solid var(--primary-light);
+}
+
+/* Consistent feature box border on hover */
+.feature-box:hover {
+    border: 1px solid var(--primary-light);
+}
+
+/* Consistent testimonial card left border */
+.testimonial-card {
+    border-left: 4px solid var(--primary);
+}
+
+.testimonial-card:hover {
+    border-left: 4px solid var(--accent);
+}
+
+/* Consistent package card button width */
+.package-card .btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+/* Consistent input font */
+.email-input {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Consistent logo hover */
+.logo {
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.logo:hover {
+    opacity: 0.85;
+}
+
+/* Consistent link style in footer */
+.footer-links ul li a,
+.footer-destinations ul li a {
+    transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.footer-links ul li a:hover,
+.footer-destinations ul li a:hover {
+    color: var(--text-white);
+    padding-left: 6px;
+}
+
+/* Consistent gallery margin top fix */
+.gallery-grid {
+    margin-top: 40px;
+}
+
+/* Consistent section background alternating */
+.why-us {
+    background-color: var(--bg-white);
+}
+
+.packages {
+    background-color: var(--bg-white);
+}
+
+/* Smooth page load */
+body {
+    animation: fadeIn 0.5s ease forwards;
+}
