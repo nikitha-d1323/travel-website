@@ -7,16 +7,12 @@
     <!-- PAGE TITLE -->
     <title>Wanderlust Travel | Explore The World</title>
 
-    <!-- META DESCRIPTION -->
+    <!-- META TAGS -->
     <meta name="description" content="Wanderlust Travel offers the best tour packages to Paris, Bali, New York and more. Book your dream holiday today at the best price.">
-
-    <!-- META KEYWORDS -->
     <meta name="keywords" content="travel, tourism, tour packages, holiday, vacation, Paris, Bali, New York">
-
-    <!-- META AUTHOR -->
     <meta name="author" content="Wanderlust Travel">
 
-    <!-- EMOJI FAVICON -->
+    <!-- FAVICON -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌍</text></svg>">
 
     <!-- OPEN GRAPH -->
@@ -27,12 +23,12 @@
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- CSS -->
+    <!-- STYLESHEET -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<!-- NAVBAR -->
+    <!-- ==================== NAVBAR ==================== -->
     <nav class="navbar">
         <div class="logo">🌍 Wanderlust</div>
         <ul class="nav-links" id="nav-links">
@@ -49,7 +45,7 @@
         </div>
     </nav>
 
-    <!-- HERO -->
+    <!-- ==================== HERO ==================== -->
     <section class="hero" id="home">
         <div class="hero-content">
             <h1>Discover Your Next Adventure</h1>
@@ -58,7 +54,7 @@
         </div>
     </section>
 
-    <!-- DESTINATIONS -->
+    <!-- ==================== DESTINATIONS ==================== -->
     <section class="destinations" id="destinations">
         <div class="section-header">
             <h2>Popular Destinations</h2>
@@ -96,7 +92,7 @@
         </div>
     </section>
 
-    <!-- WHY US -->
+    <!-- ==================== WHY US ==================== -->
     <section class="why-us">
         <div class="section-header">
             <h2>Why Travel With Us</h2>
@@ -131,7 +127,7 @@
         </div>
     </section>
 
-    <!-- GALLERY -->
+    <!-- ==================== GALLERY ==================== -->
     <section class="gallery" id="gallery">
         <div class="section-header">
             <h2>Travel Gallery</h2>
@@ -166,7 +162,7 @@
         </div>
     </section>
 
-    <!-- PACKAGES -->
+    <!-- ==================== PACKAGES ==================== -->
     <section class="packages" id="packages">
         <div class="section-header">
             <h2>Our Tour Packages</h2>
@@ -223,7 +219,7 @@
         </div>
     </section>
 
-    <!-- TESTIMONIALS -->
+    <!-- ==================== TESTIMONIALS ==================== -->
     <section class="testimonials">
         <div class="section-header">
             <h2>What Our Travelers Say</h2>
@@ -270,7 +266,7 @@
         </div>
     </section>
 
-    <!-- NEWSLETTER -->
+    <!-- ==================== NEWSLETTER ==================== -->
     <section class="newsletter">
         <div class="newsletter-content">
             <h2>Get Travel Deals Straight to Your Inbox</h2>
@@ -282,7 +278,7 @@
         </div>
     </section>
 
-    <!-- FOOTER -->
+    <!-- ==================== FOOTER ==================== -->
     <footer class="footer" id="contact">
         <div class="footer-content">
 
@@ -330,7 +326,10 @@
             <p>Made with ❤️ in Chennai</p>
         </div>
     </footer>
-<script>
+
+    <!-- ==================== JAVASCRIPT ==================== -->
+    <script>
+        /* Toggle hamburger menu open/close */
         function toggleMenu() {
             const nav = document.getElementById('nav-links');
             const ham = document.getElementById('hamburger');
@@ -338,7 +337,7 @@
             ham.classList.toggle('active');
         }
 
-        // Close menu when a link is clicked
+        /* Close menu when a nav link is clicked */
         document.querySelectorAll('.nav-links a').forEach(link => {
             link.addEventListener('click', () => {
                 document.getElementById('nav-links').classList.remove('open');
